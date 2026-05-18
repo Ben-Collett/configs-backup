@@ -1,7 +1,7 @@
 {
     "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536936449,
+        "prev_ver": 536936450,
         "name": "Desktop Audio",
         "uuid": "e2dda042-1894-4288-80e7-be3a9a09581d",
         "id": "pulse_output_capture",
@@ -32,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536936449,
+        "prev_ver": 536936450,
         "name": "Mic/Aux",
         "uuid": "4baa89b6-3f7e-4f90-a9e6-a068bdc19812",
         "id": "pulse_input_capture",
@@ -64,7 +64,7 @@
     },
     "sources": [
         {
-            "prev_ver": 536936449,
+            "prev_ver": 536936450,
             "name": "Video Capture Device (PipeWire) (BETA)",
             "uuid": "9ba85db7-dedc-480c-b26a-333a9341d604",
             "id": "pipewire-camera-source",
@@ -72,9 +72,9 @@
             "settings": {
                 "format": "{\"encoded\":false,\"video_format\":4,\"width\":640,\"height\":480}",
                 "framerate": "{\"framerate\":{\"numerator\":30.0,\"denominator\":1.0}}",
+                "device_id": "v4l2_input.pci-0000_03_00.3-usb-0_3_1.0",
                 "Brightness": 0,
-                "Contrast": 50,
-                "device_id": "v4l2_input.pci-0000_03_00.3-usb-0_3_1.0"
+                "Contrast": 50
             },
             "mixers": 0,
             "sync": 0,
@@ -94,7 +94,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936449,
+            "prev_ver": 536936450,
             "name": "Screen Capture (PipeWire) 2",
             "uuid": "b8ac08fe-5b3a-495c-9fbc-06a14b572930",
             "id": "pipewire-screen-capture-source",
@@ -120,7 +120,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936449,
+            "prev_ver": 536936450,
             "name": "Scene",
             "uuid": "e8319e58-17f3-4e87-b7f2-6509be62901b",
             "id": "scene",
@@ -304,7 +304,7 @@
     "saved_projectors": [],
     "preview_locked": true,
     "scaling_enabled": false,
-    "scaling_level": -23,
+    "scaling_level": -17,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "modules": {

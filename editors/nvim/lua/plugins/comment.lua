@@ -4,4 +4,8 @@ return {
   opts = {
     -- add any options here
   },
+  config = function()
+    local mod = require("Comment.ft")
+    mod.set("toml", "#%s")
+  end,
 }

@@ -14,7 +14,6 @@ opt.ignorecase = true
 opt.smartcase = true
 
 vim.cmd("colorscheme mytheme")
-vim.cmd("TSEnable highlight")
 
 --toggles the cmd height so I don't loose lua line when I enter command mode
 vim.opt.cmdheight = 0

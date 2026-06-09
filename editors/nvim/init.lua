@@ -1,5 +1,6 @@
 vim.opt.undofile = true
 vim.opt.termguicolors = true
+
 require("config.keymaps")
 require("config.lazy")
 --also has keymaps
@@ -34,3 +35,4 @@ vim.keymap.set("v", "<leader>h", HighlightSelection)
 --     print("hi")
 --   end,
 -- })
+--

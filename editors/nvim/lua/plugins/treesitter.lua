@@ -6,6 +6,7 @@ return {
   opts = {
     auto_install = true,
     ensure_installed = { "diff", "lua", "python", "toml", "regex", "luadoc", "nu", "vim", "dart", "comment" },
+    indent = { enable = true },
   },
   config = function(_, opts)
     require("nvim-treesitter").setup(opts)

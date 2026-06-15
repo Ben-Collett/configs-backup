@@ -1,6 +1,6 @@
 vim.opt.undofile = true
 vim.opt.termguicolors = true
-
+vim.cmd("syntax enable")
 require("config.keymaps")
 require("config.lazy")
 --also has keymaps
@@ -35,4 +35,8 @@ vim.keymap.set("v", "<leader>h", HighlightSelection)
 --     print("hi")
 --   end,
 -- })
---
+-- vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+
+vim.g.python_indent = {
+  disable_parentheses_indenting = 1,
+}

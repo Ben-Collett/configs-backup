@@ -1,5 +1,6 @@
 [general]
 auto_append = false
+buffer_size = -1
 
 [ipc]
 ipc_enabled_commands = [
@@ -422,6 +423,24 @@ space_on_new = false
 "lcy" = "clearly"
 "cln" = "control"
 "mps" = "impossible"
+"gcm" = [
+  "g",
+  "i",
+  "t",
+  " ",
+  "c",
+  "l",
+  "o",
+  "n",
+  "e",
+  " ",
+  "-",
+  "m",
+  " ",
+  '"',
+  '"',
+  "left"
+]
 "msl" = "simple"
 "ln" = "line"
 "rn" = "return"

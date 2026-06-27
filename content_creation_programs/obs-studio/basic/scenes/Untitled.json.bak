@@ -72,9 +72,9 @@
             "settings": {
                 "format": "{\"encoded\":false,\"video_format\":4,\"width\":640,\"height\":480}",
                 "framerate": "{\"framerate\":{\"numerator\":30.0,\"denominator\":1.0}}",
-                "device_id": "v4l2_input.pci-0000_03_00.3-usb-0_3_1.0",
                 "Brightness": 0,
-                "Contrast": 50
+                "Contrast": 50,
+                "device_id": "v4l2_input.pci-0000_03_00.3-usb-0_3_1.0"
             },
             "mixers": 0,
             "sync": 0,
@@ -100,7 +100,7 @@
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": ""
+                "RestoreToken": "a60a7fd4-22d6-4f57-9ece-b1511824fdf7"
             },
             "mixers": 0,
             "sync": 0,
@@ -307,6 +307,9 @@
     "scaling_level": -17,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
+    "virtual-camera": {
+        "type2": 3
+    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {

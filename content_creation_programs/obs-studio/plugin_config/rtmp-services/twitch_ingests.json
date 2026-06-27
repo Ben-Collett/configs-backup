@@ -112,18 +112,18 @@
             "_id": 12,
             "availability": 1.0,
             "default": false,
-            "name": "Asia Pacific (Sydney)",
-            "url_template": "rtmp://aps20.contribute.live-video.net/app/{stream_key}",
-            "url_template_secure": "rtmps://aps20.contribute.live-video.net/app/{stream_key}",
+            "name": "Asia Pacific (Singapore)",
+            "url_template": "rtmp://aps10.contribute.live-video.net/app/{stream_key}",
+            "url_template_secure": "rtmps://aps10.contribute.live-video.net/app/{stream_key}",
             "priority": 12
         },
         {
             "_id": 13,
             "availability": 1.0,
             "default": false,
-            "name": "Asia Pacific (Singapore)",
-            "url_template": "rtmp://aps10.contribute.live-video.net/app/{stream_key}",
-            "url_template_secure": "rtmps://aps10.contribute.live-video.net/app/{stream_key}",
+            "name": "Asia Pacific (Sydney)",
+            "url_template": "rtmp://aps20.contribute.live-video.net/app/{stream_key}",
+            "url_template_secure": "rtmps://aps20.contribute.live-video.net/app/{stream_key}",
             "priority": 13
         }
     ]

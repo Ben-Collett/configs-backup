@@ -153,6 +153,11 @@ xc = "excel"
 "wj" = "won't"
 "ty" = "they"
 "wn" = "when"
+"wnv" = "whenever"
+"whv" = "wherever"
+# not using WTV because it's all one hand
+# plus there is a TV channel named that
+"wjv" = "whatever"
 "c" = "can"
 "kw" = "know"
 "kwn" = "known"

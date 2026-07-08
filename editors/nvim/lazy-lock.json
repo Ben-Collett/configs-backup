@@ -50,6 +50,6 @@
   "vimtex": { "branch": "master", "commit": "a5949d2800c1866c878956d49c51fc8d003c6b99" },
   "wezterm.nvim": { "branch": "main", "commit": "032c33b621b96cc7228955b4352b48141c482098" },
   "whisk.nvim": { "branch": "main", "commit": "852b6892f4fe0a8f911843e0b90bfc947d3b95df" },
-  "yazi.nvim": { "branch": "main", "commit": "717e47316dcc8ac829aca72d02b8f8d51a5ddcbe" },
+  "yazi.nvim": { "branch": "main", "commit": "6d037aa8f41cb4f187014a859ea65b4af8378750" },
   "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
 }

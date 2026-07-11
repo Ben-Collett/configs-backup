@@ -17,6 +17,7 @@ ipc_enabled_commands = [
 ]
 
 [chunking]
+chunking_type = "last"
 new_chunks_only = true
 
 [code]
@@ -436,7 +437,8 @@ rmn = "remain"
 "kpg" = "keeping"
 "kps" = "keeps"
 "le" = "leave"
-"les" = "leave"
+"les" = "less"
+ll = "else"
 "lgh" = "leaving"
 "leg" = "leg"
 "lei" = "lie"
@@ -668,3 +670,11 @@ mss = "miss"
 mssd = "missed"
 "dmm" = "dimension"
 "dmms" = "dimensions"
+rope = "rope"
+ssp = "response"
+see = "see"
+eel = "eel"
+dfly = "definitely"
+mtk = "mistake"
+mtks = "mistakes"
+pssn = "passion"

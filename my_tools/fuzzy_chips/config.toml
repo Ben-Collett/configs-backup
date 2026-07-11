@@ -22,6 +22,7 @@ new_chunks_only = true
 
 [code]
 spacing_type = "new"
+assumed_casing = "normal"
 space_on_new = false
 
 [while_down]

@@ -1,5 +1,7 @@
 -- ~/.config/nvim/lua/scripts/load_scripts.lua
+require("scripts.change_case_lsp")
 local replace_word = require("scripts.replace_word")
+
 
 -- Use Lua function callback for keymap
 vim.keymap.set(

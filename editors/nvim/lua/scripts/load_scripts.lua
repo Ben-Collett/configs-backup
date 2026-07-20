@@ -3,7 +3,6 @@
 require("scripts.change_case_lsp_tcp")
 local replace_word = require("scripts.replace_word")
 
-
 -- Use Lua function callback for keymap
 vim.keymap.set(
   "n", -- normal mode

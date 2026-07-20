@@ -1,4 +1,4 @@
-vim.lsp.set_log_level("debug")
+-- vim.lsp.set_log_level("debug")
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   callback = function(args)
     if vim.fn.filereadable(args.file) == 1 then

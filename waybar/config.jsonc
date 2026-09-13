@@ -4,6 +4,9 @@
   "modules-left": [
     "hyprland/workspaces"
   ],
+  "modules-center": [
+    "custom/timer"
+  ],
   "modules-right": [
     "pulseaudio",
     "disk",
@@ -66,5 +69,14 @@
   "clock": {
     "format": "🕓 {:%H:%M:%S}",
     "interval": 1
+  },
+  "custom/timer": {
+    "exec": "~/.config/waybar/timer.sh",
+    "return-type": "json",
+    "interval": 1,
+    "on-click": "~/.config/waybar/timer.sh --set",
+    "on-click-right": "~/.config/waybar/timer.sh --cancel",
+    "tooltip": false,
+    "format": "{}"
   }
 }

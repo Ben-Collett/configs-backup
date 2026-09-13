@@ -28,6 +28,7 @@ window#waybar {
 #memory,
 #disk,
 #backlight,
+#custom-timer,
 #tray {
   padding: 6px 12px;
   margin: 4px 6px;
@@ -108,9 +109,27 @@ window#waybar {
 
 #clock:hover,
 #cpu:hover,
-#disk:hover {
+#disk:hover,
+#custom-timer:hover {
   background: rgba(0, 229, 255, 0.2);
   box-shadow: 0 0 18px #00e5ff;
+}
+
+#custom-timer.active {
+  color: #00ff9f;
+  border-color: #00ff9f;
+}
+
+#custom-timer.paused {
+  color: #ffae00;
+  border-color: #ffae00;
+  box-shadow: 0 0 12px #ffae00;
+}
+
+#custom-timer.done {
+  color: #ff2e2e;
+  border-color: #ff2e2e;
+  animation: reactorPulse 0.8s infinite alternate;
 }
 
 @keyframes scan {

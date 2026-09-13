@@ -1,7 +1,7 @@
 {
     "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536936450,
+        "prev_ver": 537001986,
         "name": "Desktop Audio",
         "uuid": "e2dda042-1894-4288-80e7-be3a9a09581d",
         "id": "pulse_output_capture",
@@ -32,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536936450,
+        "prev_ver": 537001986,
         "name": "Mic/Aux",
         "uuid": "4baa89b6-3f7e-4f90-a9e6-a068bdc19812",
         "id": "pulse_input_capture",
@@ -43,7 +43,7 @@
         "mixers": 197,
         "sync": 0,
         "flags": 0,
-        "volume": 0.9961742758750916,
+        "volume": 1.0,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -64,7 +64,7 @@
     },
     "sources": [
         {
-            "prev_ver": 536936450,
+            "prev_ver": 537001986,
             "name": "Video Capture Device (PipeWire) (BETA)",
             "uuid": "9ba85db7-dedc-480c-b26a-333a9341d604",
             "id": "pipewire-camera-source",
@@ -94,7 +94,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 537001986,
             "name": "Screen Capture (PipeWire)",
             "uuid": "f1e1c314-4fd9-4673-897d-74ab3009cb23",
             "id": "pipewire-screen-capture-source",
@@ -120,7 +120,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 537001986,
             "name": "Screen Capture (PipeWire) 2",
             "uuid": "2fa6ef8f-85f7-4089-87df-e79779d6a4f3",
             "id": "pipewire-screen-capture-source",
@@ -146,7 +146,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936450,
+            "prev_ver": 537001986,
             "name": "Scene",
             "uuid": "e8319e58-17f3-4e87-b7f2-6509be62901b",
             "id": "scene",
@@ -387,7 +387,7 @@
     "saved_projectors": [],
     "preview_locked": true,
     "scaling_enabled": false,
-    "scaling_level": -23,
+    "scaling_level": -13,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {

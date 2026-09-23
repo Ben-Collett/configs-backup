@@ -20,6 +20,9 @@ allowed = []
 [logging]
 log_to_stdout = true
 log_to_path = "~/Documents/logs/missed.log"
+chip_path = "~/Documents/logs/chip.json"
+chara_path = "~/Documents/logs/chara.json"
+mode = "load"
 
 [qt]
 duration_height = 8  # height of duration bar set to 0 to hide, default = 8

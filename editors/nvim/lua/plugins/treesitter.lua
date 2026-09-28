@@ -5,8 +5,23 @@ return {
   branch = "main",
   opts = {
     auto_install = true,
-    ensure_installed = { "diff", "lua", "python", "toml", "regex", "luadoc", "nu", "vim", "dart", "comment" },
-    indent = { enable =  true},
+    -- rust/cpp/c are needed for dap virtual text to place inline values.
+    ensure_installed = {
+      "diff",
+      "lua",
+      "python",
+      "toml",
+      "regex",
+      "luadoc",
+      "nu",
+      "vim",
+      "dart",
+      "comment",
+      "rust",
+      "cpp",
+      "c",
+    },
+    indent = { enable = true },
   },
   config = function(_, opts)
     require("nvim-treesitter").setup(opts)

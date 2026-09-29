@@ -15,10 +15,13 @@
 -- mappings because they collide with paste/save and interrupt; both actions
 -- stay reachable as `<leader>di` and `<leader>dl`.
 --
--- `<C-b>` (breakpoint) and `<C-d>` (continue) are dropped for the same kind of
--- reason: `plugins/scroll.lua` gives whisk.nvim its scroll keymaps, and whisk
--- registers after lazy.nvim, so a mapping here would be silently overwritten.
--- Use `<leader>db` and `<leader>dc` instead.
+-- `<C-b>` and `<C-d>` are mapped here for breakpoints and continue, which they
+-- can only do because `plugins/scroll.lua` stopped handing whisk.nvim its
+-- `scroll` keymap category. Whisk was registering both as "smooth scroll
+-- up/down half-page" against a handler that no-ops while whisk is disabled, so
+-- each key was dead: no breakpoint and no continue, but no native scroll
+-- either. Half-page scrolling still has `<C-u>` and vim's own motions, and
+-- `<C-e>` scrolls the other way.
 
 --- Prompt for a value, returning nil if the user cancels or enters nothing.
 ---@param prompt string
@@ -169,6 +172,20 @@ return {
     keys = {
       -- These fire even with no session, in which case nvim-dap notifies
       -- instead of erroring.
+      {
+        "<C-b>",
+        function()
+          require("dap").toggle_breakpoint()
+        end,
+        desc = "Debug: Toggle breakpoint",
+      },
+      {
+        "<C-d>",
+        function()
+          require("dap").continue()
+        end,
+        desc = "Debug: Continue",
+      },
       {
         "<C-j>",
         function()

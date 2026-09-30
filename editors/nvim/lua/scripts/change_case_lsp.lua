@@ -3,9 +3,6 @@
 -- vim.lsp.set_log_level("debug")
 vim.lsp.config("change_case_lsp", {
   cmd = { "/home/ben/Documents/my_shit/lsp/dart/change_case_lsp/bin/change_case_lsp.exe" },
-  -- This server does not answer "shutdown". Without a number here nvim waits
-  -- forever, the stopped client lingers, and it then blocks the next start.
-  exit_timeout = 1000,
   -- No `filetypes`: nvim treats a nil filetypes as "applies to every buffer",
   -- which is what the old BufRead autocmd did.
   workspace_required = true,

@@ -441,10 +441,21 @@ end)
 
 -- pin window
 
+-- Today's schedule (opened by open_schedule.sh at login) goes to workspace 2.
+-- Matched on the title set by the launcher, so normal ghostty windows are untouched.
+
+hl.window_rule({
+    name      = "schedule-to-ws2",
+    match     = { initial_title = "^daily-schedule$" },
+    workspace = "2",
+})
+
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("hyprpm reload -n")
     hl.exec_cmd("waybar")
     hl.exec_cmd("esf push")
     hl.exec_cmd("systemctl --user start xdg-desktop-portal-hyprland")
+    -- open today's schedule in neovim (silent no-op if there is no file today)
+    hl.exec_cmd(os.getenv("HOME") .. "/.config/hypr/open_schedule.sh")
 end)

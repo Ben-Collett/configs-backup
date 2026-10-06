@@ -232,7 +232,11 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + " .. "return", hl.dsp.exec_cmd("ghostty"))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "Q", hl.dsp.window.close())
-hl.bind("F24", hl.dsp.exec_cmd("handy --toggle-transcription"))
+-- handy --toggle-transcription is a remote-control flag that Handy only acts on
+-- when an instance is already running, so the first press of a session would
+-- otherwise just open the UI and drop the toggle. handy_toggle.sh starts Handy
+-- first, waits until it can receive the flag, and then sends it.
+hl.bind("F24", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/handy_toggle.sh"))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "E", hl.dsp.exit())
 
@@ -448,6 +452,13 @@ hl.window_rule({
     name      = "schedule-to-ws2",
     match     = { initial_title = "^daily-schedule$" },
     workspace = "2",
+})
+
+-- Handy (opened by handy_toggle.sh) always lands on workspace 1.
+hl.window_rule({
+    name      = "handy-to-ws1",
+    match     = { class = "^[Hh]andy$" },
+    workspace = "1",
 })
 
 -- Autostart

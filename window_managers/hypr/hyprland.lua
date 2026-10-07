@@ -232,11 +232,10 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + " .. "return", hl.dsp.exec_cmd("ghostty"))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "Q", hl.dsp.window.close())
--- handy --toggle-transcription is a remote-control flag that Handy only acts on
--- when an instance is already running, so the first press of a session would
--- otherwise just open the UI and drop the toggle. handy_toggle.sh starts Handy
--- first, waits until it can receive the flag, and then sends it.
-hl.bind("F24", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/handy_toggle.sh"))
+-- Handy is already running (autostarted below), so --toggle-transcription is
+-- received by the single-instance listener instead of being dropped. It only
+-- fires within the first second or so of login, while Handy is still booting.
+hl.bind("F24", hl.dsp.exec_cmd("handy --toggle-transcription"))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "E", hl.dsp.exit())
 
@@ -454,7 +453,7 @@ hl.window_rule({
     workspace = "2",
 })
 
--- Handy (opened by handy_toggle.sh) always lands on workspace 1.
+-- Handy (autostarted at login) always lands on workspace 1.
 hl.window_rule({
     name      = "handy-to-ws1",
     match     = { class = "^[Hh]andy$" },
@@ -469,4 +468,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start xdg-desktop-portal-hyprland")
     -- open today's schedule in neovim (silent no-op if there is no file today)
     hl.exec_cmd(os.getenv("HOME") .. "/.config/hypr/open_schedule.sh")
+    -- Handy always has an instance running, so F24 can toggle transcription
+    -- straight away instead of having to boot Handy first.
+    hl.exec_cmd("handy")
 end)

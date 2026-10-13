@@ -28,14 +28,14 @@ run = "filter"
 [[mgr.prepend_keymap]]
 on = ["<C-n>"]
 run = '''
-    shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+    shell -- ripdrag %s 2>/dev/null &
 '''
-dec = "drage and drop files with ripdrag"
+desc = "Drag and drop files with ripdrag"
 
 [[mgr.prepend_keymap]]
 on = ["g", "i"]
 run = '''
-    shell 'genisoimage -o ./output.iso -R -J "$@"' --confirm
+    shell -- genisoimage -o ./output.iso -R -J %s
 '''
 
 [[mgr.prepend_keymap]]
@@ -91,17 +91,17 @@ desc = "Open with command"
 
 [[mgr.prepend_keymap]]
 on = "e"
-run = "shell '$@' --confirm"
+run = "shell -- %s"
 desc = "execute the current selected file"
 
 [[mgr.prepend_keymap]]
 on = ["c", "o"]
-run = "shell 'codium $@' --confirm"
+run = "shell -- codium %s"
 desc = "opens with codium"
 
 [[mgr.prepend_keymap]]
 on = ["c", "u"]
-run = "cursor '$@' --confirm"
+run = "shell -- cursor %s"
 desc = "opens with cursor"
 
 [[mgr.prepend_keymap]]

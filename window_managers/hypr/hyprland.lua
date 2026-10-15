@@ -251,6 +251,18 @@ hl.bind(mainMod .. " + " .. "G", hl.dsp.exec_cmd("firefox https://chatgpt.com/")
 
 hl.bind(mainMod .. " + " .. "N", hl.dsp.exec_cmd("hyprctl dismissnotify"))
 
+-- teleprompter: swaps the status bar for a single centred line pinned under
+-- the webcam, and back again. Press SUPER+T twice to toggle.
+-- The arrows sit unused next to SUPER+Left/Right, so they drive the prompt.
+
+hl.bind(mainMod .. " + " .. "T", hl.dsp.exec_cmd("teleprompter"))
+
+hl.bind(mainMod .. " + " .. "right", hl.dsp.exec_cmd("~/.config/waybar/prompt.sh --step 1"))
+
+hl.bind(mainMod .. " + " .. "left", hl.dsp.exec_cmd("~/.config/waybar/prompt.sh --step -1"))
+
+hl.bind(mainMod .. " + " .. "up", hl.dsp.exec_cmd("~/.config/waybar/prompt.sh --toggle-pause"))
+
 --
 
 hl.bind(mainMod .. " + " .. "down", hl.dsp.focus({ direction = "down" }))

@@ -1,0 +1,9 @@
+Well, that's about it for the current state of the project.
+
+In the future I would like to add support for installing programs and launching them through GUI's
+like wofi or windows start menu, supporting icons as well.
+
+I also should try to make it so that dumbinstaller updates before other programs that way if there is a bug fix it updates first.
+
+And I need to improve the shims on linux, by replacing running the command with exec calls.
+

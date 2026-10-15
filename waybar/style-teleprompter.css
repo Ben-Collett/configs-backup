@@ -1,0 +1,33 @@
+/*
+ * Teleprompter bar styling.
+ *
+ * The window itself is fully transparent: with nothing but the centred module
+ * inside it, the visible text is confined to a narrow column in the middle of
+ * the screen, which keeps your gaze on the webcam above.
+ */
+
+* {
+  font-family: "Orbitron", "JetBrainsMono Nerd Font";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background: transparent;
+  border: none;
+}
+
+#custom-prompt {
+  padding: 3px 20px;
+  margin: 0;
+
+  background: rgba(5, 12, 20, 0.92);
+  border: 1px solid #00e5ff;
+  border-radius: 6px;
+
+  color: #00e5ff;
+}
+
+#custom-prompt label {
+  color: #00e5ff;
+}

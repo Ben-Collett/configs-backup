@@ -1,0 +1,32 @@
+// Teleprompter bar, swapped in for the normal status bar while you present.
+//
+// Waybar's window always spans the full width of the output, so the bar is not
+// narrowed here -- it is made transparent instead, and the only thing left
+// drawing is the single centred module. That is what guarantees the text can
+// never drift toward the left or right edge of the screen.
+
+{
+  "height": 38,
+  "spacing": 0,
+
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
+  "modules-left": [],
+  "modules-center": [
+    "custom/prompt"
+  ],
+  "modules-right": [],
+
+  "custom/prompt": {
+    "exec": "~/.config/waybar/prompt.sh",
+    "return-type": "json",
+    "interval": 0.2,
+    "tooltip": true,
+    "format": "{}"
+  }
+}

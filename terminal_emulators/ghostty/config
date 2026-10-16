@@ -1,4 +1,4 @@
-custom-shader = ~/.config/ghostty/shaders/lightning_sparks.glsl
+custom-shader = ~/.config/ghostty/shaders/halloween_lightning_sparks.glsl
 theme = Wez
 
 palette = 2=#00FF00

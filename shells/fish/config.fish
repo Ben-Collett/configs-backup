@@ -19,3 +19,8 @@ if status is-interactive
         set -g __session_has_run 1
     end
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/ben/.lmstudio/bin
+# End of LM Studio CLI section
+

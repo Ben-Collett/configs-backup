@@ -388,11 +388,8 @@
     "preview_locked": true,
     "scaling_enabled": true,
     "scaling_level": -27,
-    "scaling_off_x": 0.0,
+    "scaling_off_x": -20.0,
     "scaling_off_y": -6.0,
-    "virtual-camera": {
-        "type2": 3
-    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {

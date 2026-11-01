@@ -1,7 +1,7 @@
 {
     "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 537001986,
+        "prev_ver": 553648129,
         "name": "Desktop Audio",
         "uuid": "e2dda042-1894-4288-80e7-be3a9a09581d",
         "id": "pulse_output_capture",
@@ -23,16 +23,19 @@
         "hotkeys": {
             "libobs.mute": [],
             "libobs.unmute": [],
+            "libobs.monitor-on": [],
+            "libobs.monitor-off": [],
             "libobs.push-to-mute": [],
             "libobs.push-to-talk": []
         },
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
+        "monitoring_enabled": false,
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 537001986,
+        "prev_ver": 553648129,
         "name": "Mic/Aux",
         "uuid": "4baa89b6-3f7e-4f90-a9e6-a068bdc19812",
         "id": "pulse_input_capture",
@@ -54,17 +57,20 @@
         "hotkeys": {
             "libobs.mute": [],
             "libobs.unmute": [],
+            "libobs.monitor-on": [],
+            "libobs.monitor-off": [],
             "libobs.push-to-mute": [],
             "libobs.push-to-talk": []
         },
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 2,
+        "monitoring_enabled": true,
         "private_settings": {}
     },
     "sources": [
         {
-            "prev_ver": 537001986,
+            "prev_ver": 553648129,
             "name": "Video Capture Device (PipeWire) (BETA)",
             "uuid": "9ba85db7-dedc-480c-b26a-333a9341d604",
             "id": "pipewire-camera-source",
@@ -91,10 +97,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 537001986,
+            "prev_ver": 553648129,
             "name": "Screen Capture (PipeWire)",
             "uuid": "f1e1c314-4fd9-4673-897d-74ab3009cb23",
             "id": "pipewire-screen-capture-source",
@@ -117,10 +124,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 537001986,
+            "prev_ver": 553648129,
             "name": "Screen Capture (PipeWire) 2",
             "uuid": "2fa6ef8f-85f7-4089-87df-e79779d6a4f3",
             "id": "pipewire-screen-capture-source",
@@ -143,10 +151,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "private_settings": {}
         },
         {
-            "prev_ver": 537001986,
+            "prev_ver": 553648129,
             "name": "Scene",
             "uuid": "e8319e58-17f3-4e87-b7f2-6509be62901b",
             "id": "scene",
@@ -345,6 +354,7 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "monitoring_enabled": false,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         }

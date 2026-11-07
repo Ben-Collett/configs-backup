@@ -1,1 +1,1 @@
-/home/ben/.config/fish/prompts/halloween.fish
+/home/ben/.config/fish/prompts/content_normal.fish

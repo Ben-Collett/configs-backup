@@ -8,6 +8,8 @@ return {
     -- rust/cpp/c are needed for dap virtual text to place inline values.
     ensure_installed = {
       "diff",
+      -- The json parser also handles the jsonc filetype (.jsonc files).
+      "json",
       "lua",
       "python",
       "toml",
